@@ -1,5 +1,20 @@
-.container {
-  background: #1c1a19;
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;  /*1rem = 10 px*/  
+}
+
+*,*:before, *:after{
+  box-sizing: inherit;
+}
+
+body {
+  background: url("img/illustration.png") no-repeat right center;
+  margin: 0px;
+  background-color: #1c1a19;
+  background-position: right 300px;
+}
+
+.container {  
   max-width: 90%;
   margin: 20px auto;
 }
@@ -39,27 +54,33 @@
   background-color: #3c3a39;
 }
 
-.header div {
-  cursor: pointer;
+.header a {
+  text-decoration: none;
 }
-
-.name {
-  font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
+.name {  
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
   text-align: center;
   color: white;
+  padding: 35px 0px;
+}
+
+@media (min-width: 768px) {
+  .header {
+    justify-content: space-between;
+    padding: 0px 50px;
+  }
 }
 
 .text-container {
   width: 100%;
 }
 
-.welcome {
-  position: static;
-  font-family: 'Crete Round', serif;;
+.welcome { 
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: normal;
   font-size: 56px;
@@ -67,7 +88,7 @@
   letter-spacing: 0.37px;
   color: #ff6b00;
   flex: none;
-  margin: 12px;
+  margin: 120px 12px 12px 12px;
 }
 
 .profession {
@@ -104,6 +125,7 @@
   justify-content: space-evenly;
   margin-top: 50px;
   list-style: none;
+  width: 80%;
 }
 
 .social-media img {
@@ -112,7 +134,7 @@
 
 .main {
   width: 100%;
-  margin-top: -200px;
+  margin-top: -300px;
   height: 612.03px;
   display: flex;
   justify-content: end;
