@@ -1,12 +1,3 @@
-html {
-  box-sizing: border-box;
-  font-size: 62.5%;
-}
-
-*,*:before, *:after{
-  box-sizing: inherit;
-}
-
 body {
   background: url("img/illustration.png") no-repeat right center;
   margin: 0;
