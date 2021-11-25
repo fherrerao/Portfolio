@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-size: 62.5%;  /*1rem = 10 px*/  
+  font-size: 62.5%;
 }
 
 *,*:before, *:after{
@@ -9,12 +9,12 @@ html {
 
 body {
   background: url("img/illustration.png") no-repeat right center;
-  margin: 0px;
+  margin: 0;
   background-color: #1c1a19;
   background-position: right 300px;
 }
 
-.container {  
+.container {
   max-width: 90%;
   margin: 20px auto;
 }
@@ -57,7 +57,8 @@ body {
 .header a {
   text-decoration: none;
 }
-.name {  
+
+.name {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -65,13 +66,13 @@ body {
   line-height: 24px;
   text-align: center;
   color: white;
-  padding: 35px 0px;
+  padding: 35px 0;
 }
 
 @media (min-width: 768px) {
   .header {
     justify-content: space-between;
-    padding: 0px 50px;
+    padding: 0 50px;
   }
 }
 
@@ -79,7 +80,7 @@ body {
   width: 100%;
 }
 
-.welcome { 
+.welcome {
   font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: normal;
