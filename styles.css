@@ -1,5 +1,7 @@
 .container {
-  background: #1C1A19;  
+  background: #1C1A19;
+  max-width: min(90%, 1200px);
+  margin: 20px auto;
 }
 .hamb1 {
   height: 2px;
@@ -35,6 +37,7 @@
 .header div {
   cursor: pointer;
 }
+
 .name {
   font-family: Roboto;
   font-size: 18px;
@@ -45,12 +48,11 @@
   text-align: center;
   color: white;  
 }
+.text-container {
+    width: 100%;
+  }
 .welcome {
-  position: static;
-  width: 327px;
-  height: 124px;
-  left: 24px;
-  top: 120px;  
+  position: static;   
   font-family: Crete Round;
   font-style: normal;
   font-weight: normal;
@@ -58,17 +60,11 @@
   line-height: 64px;  
   letter-spacing: 0.37px; 
   color: #FF6B00;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  flex: none;  
   margin: 12px 0px;
 }
 .profession {
-  position: static;
-  width: 327px;
-  height: 27px;
-  left: 24px;
-  top: 256px;  
+  position: static;  
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -78,16 +74,11 @@
   align-items: center;
   color: #FFF5E1; 
   flex: none;
-  order: 1;
-  flex-grow: 0;
+  order: 1;  
   margin: 12px 0px;
 }
 .xp {
-  position: static;
-  width: 327px;
-  height: 123px;
-  left: 24px;
-  top: 295px;  
+  position: static;   
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
@@ -95,16 +86,22 @@
   line-height: 24px;  
   color: #FFFFFF;  
   flex: none;
-  order: 2;
-  flex-grow: 0;
+  order: 2;  
   margin: 12px 0px;
+  text-align: justify;
 }
 .social-media {
   display: flex;
   justify-content: space-evenly;
-  width: 327px;    
-  column-gap: 30%;    
+  margin-top: 50px;
 }
 .social-media img {
   cursor: pointer;
+}
+.main {
+  width: 100%;  
+  margin-top: -200px;  
+  height: 612.03px;
+  display: flex;
+  justify-content: end;
 }
