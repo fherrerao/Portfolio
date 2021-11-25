@@ -49,7 +49,6 @@
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
-
   text-align: center;
   color: white;
 }
@@ -60,7 +59,7 @@
 
 .welcome {
   position: static;
-  font-family: Crete Round;
+  font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 56px;
@@ -73,8 +72,7 @@
 
 .profession {
   position: static;
-
-  font-family: Verdana;
+  font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -89,7 +87,7 @@
 
 .xp {
   position: static;
-  font-family: Verdana;
+  font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
