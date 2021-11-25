@@ -1,6 +1,6 @@
 .container {
   background: #1c1a19;
-  width: min(90%, 1200px);
+  max-width: 90%;
   margin: 20px auto;
 }
 
@@ -36,7 +36,7 @@
   column-gap: 20px;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #3C3A39;
+  background-color: #3c3a39;
 }
 
 .header div {
@@ -44,12 +44,11 @@
 }
 
 .name {
-  font-family: Roboto;
+  font-family: Verdana;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0em;
+  line-height: 24px;  
   text-align: center;
   color: white;
 }
@@ -66,37 +65,37 @@
   font-size: 56px;
   line-height: 64px;
   letter-spacing: 0.37px;
-  color: #FF6B00;
+  color: #ff6b00;
   flex: none;
-  margin: 12px 0px;
+  margin: 12px;
 }
 
 .profession {
   position: static;  
-  font-family: Roboto;
+  font-family: Verdana;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 32px;
   display: flex;
   align-items: center;
-  color: #FFF5E1;
+  color: #fff5e1;
   flex: none;
   order: 1;
-  margin: 12px 0px;
+  margin: 12px;
 }
 
 .xp {
   position: static;
-  font-family: Poppins;
+  font-family: Verdana;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  color: #FFFFFF;
+  color: #ffffff;
   flex: none;
   order: 2;
-  margin: 12px 0px;
+  margin: 12px;
   text-align: justify;
 }
 
