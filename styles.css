@@ -1,8 +1,9 @@
 .container {
-  background: #1C1A19;
-  max-width: min(90%, 1200px);
+  background: #1c1a19;
+  width: min(90%, 1200px);
   margin: 20px auto;
 }
+
 .hamb1 {
   height: 2px;
   width: 16px;
@@ -11,6 +12,7 @@
   background-color: whitesmoke;
   margin-bottom: 2px;
 }
+
 .hamb2 {
   height: 2px;
   width: 16.000000000000075px;
