@@ -1,0 +1,133 @@
+body {
+  background: url("img/illustration.png") no-repeat right center;
+  margin: 0;
+  background-color: #1c1a19;
+  background-position: right 300px;
+}
+
+.container {
+  max-width: 90%;
+  margin: 20px auto;
+}
+
+.hamb1 {
+  height: 2px;
+  width: 16px;
+  left: 4px;
+  top: 7px;
+  background-color: whitesmoke;
+  margin-bottom: 2px;
+}
+
+.hamb2 {
+  height: 2px;
+  width: 16.000000000000075px;
+  left: 4px;
+  top: 12px;
+  background-color: whitesmoke;
+  margin-bottom: 2px;
+}
+
+.hamb3 {
+  height: 2px;
+  width: 16.000000000000075px;
+  left: 4px;
+  top: 12px;
+  background-color: whitesmoke;
+  margin-bottom: 2px;
+}
+
+.header {
+  display: flex;
+  column-gap: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #3c3a39;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.name {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  color: white;
+  padding: 35px 0;
+}
+
+@media (min-width: 768px) {
+  .header {
+    justify-content: space-between;
+    padding: 0 50px;
+  }
+}
+
+.text-container {
+  width: 100%;
+}
+
+.welcome {
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+  flex: none;
+  margin: 120px 12px 12px 12px;
+}
+
+.profession {
+  position: static;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #fff5e1;
+  flex: none;
+  order: 1;
+  margin: 12px;
+}
+
+.xp {
+  position: static;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  flex: none;
+  order: 2;
+  margin: 12px;
+  text-align: justify;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  list-style: none;
+  width: 80%;
+}
+
+.social-media img {
+  cursor: pointer;
+}
+
+.main {
+  width: 100%;
+  margin-top: -300px;
+  height: 612.03px;
+  display: flex;
+  justify-content: end;
+}
