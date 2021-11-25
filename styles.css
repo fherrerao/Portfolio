@@ -59,7 +59,7 @@
 
 .welcome {
   position: static;
-  font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-family: 'Crete Round', serif;;
   font-style: normal;
   font-weight: normal;
   font-size: 56px;
@@ -72,7 +72,7 @@
 
 .profession {
   position: static;
-  font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -87,7 +87,7 @@
 
 .xp {
   position: static;
-  font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -103,6 +103,7 @@
   display: flex;
   justify-content: space-evenly;
   margin-top: 50px;
+  list-style: none;
 }
 
 .social-media img {
