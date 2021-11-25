@@ -44,11 +44,12 @@
 }
 
 .name {
-  font-family: Verdana;
+  font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  line-height: 24px;  
+  line-height: 24px;
+
   text-align: center;
   color: white;
 }
@@ -71,7 +72,8 @@
 }
 
 .profession {
-  position: static;  
+  position: static;
+
   font-family: Verdana;
   font-style: normal;
   font-weight: bold;
@@ -92,7 +94,7 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  color: #ffffff;
+  color: #fff;
   flex: none;
   order: 2;
   margin: 12px;
