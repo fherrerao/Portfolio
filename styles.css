@@ -7,7 +7,7 @@ body {
 
 .container {
   max-width: 90%;
-  margin: 20px auto;
+  margin: 20px auto;  
 }
 
 .hamb1 {
@@ -68,7 +68,7 @@ body {
 }
 
 .text-container {
-  width: 100%;
+  width: 100%;  
 }
 
 .welcome {
@@ -117,7 +117,7 @@ body {
   justify-content: space-evenly;
   margin-top: 50px;
   list-style: none;
-  width: 80%;
+  width: 80%;  
 }
 
 .social-media img {
@@ -131,7 +131,6 @@ body {
   display: flex;
   justify-content: end;
 }
-
 /*Recent works section*/
 .works-section {
   width: 100%;  
@@ -153,3 +152,60 @@ body {
   border: 1px solid #212121;
   margin: 0 24px;
 }
+
+.stories-section {
+  background-color: #e5e5e5;
+  display: flex;
+  flex-direction: column;  
+  padding: 0 24px;
+}
+
+.stories-section img {
+  margin-top: 80px;  
+  
+}
+
+.stories-section h2 {
+  font-family: 'Crete Round', serif;
+  font-weight: 400;
+  color: #091e42;
+  font-size: 32px;
+  margin-bottom: 0;
+}
+
+.story {
+  font-family: 'Inter', sans-serif;
+  margin: 12px 0;
+  text-align: justify;
+  font-size: 16px;
+  color: #091e42;
+}
+
+.techs-container {
+  display: flex;
+  column-gap: 12px;
+  justify-content: center;
+}
+
+.techs {
+  font-family: 'Inter' , sans-serif;
+  font-size: 15px;
+  color: #091e42;
+  border: 1px solid #8993A4;
+  padding: 10px 12px;
+  margin: 0;
+}
+
+.button {
+  font-family: 'Inter' , sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  color: #fff;  
+  width: 100px;
+  height: 24px;
+  background-color: #ff6b00;
+  border-style: none;
+  padding: 12px;
+  margin: 12px 0;
+}
+
