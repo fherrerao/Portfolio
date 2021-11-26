@@ -1,13 +1,20 @@
 body {
-  background: url("img/illustration.png") no-repeat right center;
+  background-color: #e5e5e5;
   margin: 0;
-  background-color: #1c1a19;
-  background-position: right 300px;
 }
 
 .container {
   max-width: 90%;
   margin: 20px auto;  
+}
+
+.presentation {  
+  background-color: #1c1a19;
+  padding: 1px 0 120px 0;
+  background-image: url("img/illustration.png");
+  background-repeat: no-repeat;  
+  margin: 0;  
+  background-position: right 300px;
 }
 
 .hamb1 {
@@ -117,7 +124,8 @@ body {
   justify-content: space-evenly;
   margin-top: 50px;
   list-style: none;
-  width: 80%;  
+  width: 70%;
+  padding-left: 10px;
 }
 
 .social-media img {
@@ -146,6 +154,7 @@ body {
   font-weight: normal;
   font-size: 40px;
   line-height: 52px;
+  margin: 0 0;
 }
 
 .vector {
@@ -201,11 +210,61 @@ body {
   font-weight: bold;
   font-size: 17px;
   color: #fff;  
-  width: 100px;
-  height: 24px;
+  width: 124px;
+  height: 48px;
   background-color: #ff6b00;
   border-style: none;
   padding: 12px;
   margin: 12px 0;
+}
+
+.projects-container {
+  background-color: #e5e5e5;
+  padding: 0 40px;  
+  background-image: url(img/placeholderproject.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 90% 100%;
+  
+}
+
+.projects-container h2 {
+  font-family: 'Crete Round', sans-serif;
+  color: #fff;
+  padding-top: 84px;
+  margin-top: 0;
+}
+
+.projects-container p {
+  font-family: 'Crete Round', sans-serif;
+  color: #fff;  
+  margin-top: 0;
+}
+
+.button-project {
+  font-family: 'Inter' , sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  color: #fff;
+  width:100%;
+  background-color: #ff6b00;
+  border-style: none;
+  padding: 12px 0;
+  margin: 12px 0;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 24px;
+}
+
+.separadtion {  
+  width: 100%;
+  height: 120px;
+}
+
+.projects-container:last-child {
+  margin-bottom: 120px;
 }
 
