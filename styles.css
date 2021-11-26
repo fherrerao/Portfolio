@@ -131,3 +131,25 @@ body {
   display: flex;
   justify-content: end;
 }
+
+/*Recent works section*/
+.works-section {
+  width: 100%;  
+  background-color: #e5e5e5;
+}
+
+.title-works {
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 24px;
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.vector {
+  border: 1px solid #212121;
+  margin: 0 24px;
+}
