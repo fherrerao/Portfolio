@@ -228,13 +228,16 @@ body {
 
 .projects-container h2 {
   font-family: 'Crete Round', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
   color: #fff;
   padding-top: 84px;
   margin-top: 0;
 }
 
 .projects-container p {
-  font-family: 'Crete Round', sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
   color: #fff;
   margin-top: 0;
 }
