@@ -236,7 +236,8 @@ body {
   margin-top: 0;
 }
 
-.projects-container p, .projects-container li {
+.projects-container p,
+.projects-container li {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   color: #fff;
