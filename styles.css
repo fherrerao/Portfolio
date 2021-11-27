@@ -139,7 +139,7 @@ body {
   display: flex;
   justify-content: end;
 }
- /*Recent works section*/
+ 
 .works-section {
   width: 100%;
   background-color: #e5e5e5;
@@ -199,7 +199,7 @@ body {
   font-family: 'Inter', sans-serif;
   font-size: 15px;
   color: #091e42;
-  border: 1px solid #8993A4;
+  border: 1px solid #8993a4;
   padding: 10px 12px;
   margin: 0;
 }
@@ -223,7 +223,7 @@ body {
   background-image: url(img/placeholderproject.png);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 90% 100%;  
+  background-size: 90% 100%;
 }
 
 .projects-container h2 {
