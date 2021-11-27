@@ -236,7 +236,7 @@ body {
   margin-top: 0;
 }
 
-.projects-container p, .projects-container li  {
+.projects-container p, .projects-container li {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   color: #fff;
@@ -249,7 +249,7 @@ body {
   font-size: 17px;
   color: #fff;
   display: block;
-  background-color: #ff6b00;  
+  background-color: #ff6b00;
   text-decoration: none;
   padding: 12px 0;
   text-align: center;
@@ -260,7 +260,7 @@ body {
 
 .projects {
   display: grid;
-  grid-template-columns: 1fr;  
+  grid-template-columns: 1fr;
 }
 
 .separadtion {
