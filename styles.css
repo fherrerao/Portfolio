@@ -278,7 +278,7 @@ body {
 .about h2 {
   font-family: 'Crete Round', sans-serif;
   color: #ff6b00;
-  font-size: 72px;
+  font-size: 62px;
   font-weight: 400;  
   text-align: center;
   margin: 0 24px;
@@ -305,6 +305,7 @@ body {
   font-family: 'Inter', sans-serif;
   font-size: 17px;
   font-weight: bold;
+  border-style: none;
 }
 
 .vector-about {
@@ -358,3 +359,17 @@ body {
   padding-bottom: 100px;
 }
 
+.languages ul {
+  display: flex;
+  flex-direction: column;  
+  list-style: none;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+}
+
+.diamond h3 {
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+}
