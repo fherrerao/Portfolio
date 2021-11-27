@@ -5,15 +5,15 @@ body {
 
 .container {
   max-width: 90%;
-  margin: 20px auto;  
+  margin: 20px auto;
 }
 
-.presentation {  
+.presentation {
   background-color: #1c1a19;
   padding: 1px 0 120px 0;
   background-image: url("img/illustration.png");
-  background-repeat: no-repeat;  
-  margin: 0;  
+  background-repeat: no-repeat;
+  margin: 0;
   background-position: right 300px;
 }
 
@@ -75,7 +75,7 @@ body {
 }
 
 .text-container {
-  width: 100%;  
+  width: 100%;
 }
 
 .welcome {
@@ -116,7 +116,7 @@ body {
   flex: none;
   order: 2;
   margin: 12px;
-  text-align: justify;  
+  text-align: justify;
 }
 
 .social-media {
@@ -139,9 +139,9 @@ body {
   display: flex;
   justify-content: end;
 }
-/*Recent works section*/
+ /*Recent works section*/
 .works-section {
-  width: 100%;  
+  width: 100%;
   background-color: #e5e5e5;
 }
 
@@ -165,13 +165,12 @@ body {
 .stories-section {
   background-color: #e5e5e5;
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
   padding: 0 24px;
 }
 
 .stories-section img {
-  margin-top: 80px;  
-  
+  margin-top: 80px;
 }
 
 .stories-section h2 {
@@ -197,7 +196,7 @@ body {
 }
 
 .techs {
-  font-family: 'Inter' , sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 15px;
   color: #091e42;
   border: 1px solid #8993A4;
@@ -206,10 +205,10 @@ body {
 }
 
 .button {
-  font-family: 'Inter' , sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: bold;
   font-size: 17px;
-  color: #fff;  
+  color: #fff;
   width: 124px;
   height: 48px;
   background-color: #ff6b00;
@@ -220,12 +219,11 @@ body {
 
 .projects-container {
   background-color: #e5e5e5;
-  padding: 0 40px;  
+  padding: 0 40px;
   background-image: url(img/placeholderproject.png);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 90% 100%;
-  
+  background-size: 90% 100%;  
 }
 
 .projects-container h2 {
@@ -237,16 +235,16 @@ body {
 
 .projects-container p {
   font-family: 'Crete Round', sans-serif;
-  color: #fff;  
+  color: #fff;
   margin-top: 0;
 }
 
 .button-project {
-  font-family: 'Inter' , sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: bold;
   font-size: 17px;
   color: #fff;
-  width:100%;
+  width: 100%;
   background-color: #ff6b00;
   border-style: none;
   padding: 12px 0;
@@ -259,7 +257,7 @@ body {
   row-gap: 24px;
 }
 
-.separadtion {  
+.separadtion {
   width: 100%;
   height: 120px;
 }
@@ -268,7 +266,7 @@ body {
   margin-bottom: 120px;
 }
 
-.about {  
+.about {
   background-color: #1c1a19;
   background-image: url("img/frame.png");
   background-repeat: no-repeat;
@@ -279,7 +277,7 @@ body {
   font-family: 'Crete Round', sans-serif;
   color: #ff6b00;
   font-size: 62px;
-  font-weight: 400;  
+  font-weight: 400;
   text-align: center;
   margin: 0 24px;
   padding-top: 120px;
@@ -293,7 +291,7 @@ body {
 }
 
 .about input {
-  display: flex;  
+  display: flex;
   align-items: center;
   padding: 12px;
   background: #ff6b00;
@@ -310,7 +308,7 @@ body {
 
 .vector-about {
   border: 1px solid #fff;
-  margin: 221px 24px 0 24px;  
+  margin: 221px 24px 0 24px;
 }
 
 .languages {
@@ -332,7 +330,7 @@ body {
   height: 18px;
   left: 12px;
   top: 20.73px;
-  background: #FF6B00;
+  background: #ff6b00;
   transform: rotate(-45deg);
 }
 
@@ -342,7 +340,7 @@ body {
   height: 18px;
   left: 12px;
   top: 20.73px;
-  background: #FF6B00;
+  background: #ff6b00;
 }
 
 .circle {
@@ -351,8 +349,8 @@ body {
   height: 18px;
   left: 12px;
   top: 20.73px;
-  background: #FF6B00;
-  border-radius: 150px;  
+  background: #63605e;
+  border-radius: 150px;
 }
 
 .last {
