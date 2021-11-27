@@ -193,6 +193,8 @@ body {
   display: flex;
   column-gap: 12px;
   justify-content: center;
+  list-style: none;
+  padding-left: 0;
 }
 
 .techs {
@@ -209,12 +211,11 @@ body {
   font-weight: bold;
   font-size: 17px;
   color: #fff;
-  width: 124px;
-  height: 48px;
   background-color: #ff6b00;
-  border-style: none;
+  text-decoration: none;
   padding: 12px;
-  margin: 12px 0;
+  width: fit-content;
+  margin-bottom: 24px;
 }
 
 .projects-container {
@@ -235,7 +236,7 @@ body {
   margin-top: 0;
 }
 
-.projects-container p {
+.projects-container p, .projects-container li  {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   color: #fff;
@@ -247,17 +248,19 @@ body {
   font-weight: bold;
   font-size: 17px;
   color: #fff;
-  width: 100%;
-  background-color: #ff6b00;
-  border-style: none;
+  display: block;
+  background-color: #ff6b00;  
+  text-decoration: none;
   padding: 12px 0;
-  margin: 12px 0;
+  text-align: center;
+  width: 90%;
+  align-content: center;
+  margin: 0 auto 24px auto;
 }
 
 .projects {
   display: grid;
-  grid-template-columns: 1fr;
-  row-gap: 24px;
+  grid-template-columns: 1fr;  
 }
 
 .separadtion {
@@ -265,15 +268,12 @@ body {
   height: 120px;
 }
 
-.projects-container:last-child {
-  margin-bottom: 120px;
-}
-
 .about {
   background-color: #1c1a19;
   background-image: url("img/frame.png");
   background-repeat: no-repeat;
   background-position: right 300px;
+  margin-top: 120px;
 }
 
 .about h2 {
@@ -293,7 +293,7 @@ body {
   padding: 24px 0;
 }
 
-.about input {
+.button-resume {
   display: flex;
   align-items: center;
   padding: 12px;
@@ -306,7 +306,8 @@ body {
   font-family: 'Inter', sans-serif;
   font-size: 17px;
   font-weight: bold;
-  border-style: none;
+  text-decoration: none;
+  width: fit-content;
 }
 
 .vector-about {
