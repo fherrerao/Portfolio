@@ -378,3 +378,16 @@ body {
   font-weight: bold;
   font-size: 32px;
 }
+
+
+
+
+.more-info{
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  color: #172B4D;
+  text-align: center;
+  margin: 0 24px;
+
+}
+
