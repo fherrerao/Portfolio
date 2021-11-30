@@ -408,10 +408,21 @@ form{
 input {
   width: 85%;
   margin-top: 20px;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  background-color: #e5e5e5;
 }
 
 textarea {
   width: 85%;
   height: auto;
   margin-top: 20px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+}
+
+.vector-contact {
+  border: 1px solid #DBD8D7;
+  margin: 5px 24px;
 }
