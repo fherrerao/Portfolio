@@ -57,7 +57,7 @@ body {
 }
 
 .name {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -79,7 +79,7 @@ body {
 }
 
 .welcome {
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 56px;
@@ -92,7 +92,7 @@ body {
 
 .profession {
   position: static;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -107,7 +107,7 @@ body {
 
 .xp {
   position: static;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -149,7 +149,7 @@ body {
   text-align: center;
   padding-top: 120px;
   padding-bottom: 24px;
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 40px;
@@ -174,7 +174,7 @@ body {
 }
 
 .stories-section h2 {
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-weight: 400;
   color: #091e42;
   font-size: 32px;
@@ -182,7 +182,7 @@ body {
 }
 
 .story {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   margin: 12px 0;
   text-align: justify;
   font-size: 16px;
@@ -198,7 +198,7 @@ body {
 }
 
 .techs {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 15px;
   color: #091e42;
   border: 1px solid #8993a4;
@@ -207,7 +207,7 @@ body {
 }
 
 .button {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: bold;
   font-size: 17px;
   color: #fff;
@@ -228,7 +228,7 @@ body {
 }
 
 .projects-container h2 {
-  font-family: 'Crete Round', sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-size: 32px;
   font-weight: 400;
   color: #fff;
@@ -238,14 +238,14 @@ body {
 
 .projects-container p,
 .projects-container li {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   color: #fff;
   margin-top: 0;
 }
 
 .button-project {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: bold;
   font-size: 17px;
   color: #fff;
@@ -278,7 +278,7 @@ body {
 }
 
 .about h2 {
-  font-family: 'Crete Round', sans-serif;
+  font-family: "Crete Round", sans-serif;
   color: #ff6b00;
   font-size: 62px;
   font-weight: 400;
@@ -288,7 +288,7 @@ body {
 }
 
 .about p {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   margin: 0 24px;
   color: #f4f5f7;
   padding: 24px 0;
@@ -304,7 +304,7 @@ body {
   flex-grow: 0;
   margin: 0 24px;
   color: #fff;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 17px;
   font-weight: bold;
   text-decoration: none;
@@ -368,32 +368,50 @@ body {
   flex-direction: column;
   list-style: none;
   align-items: center;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 22px;
   padding-left: 0;
 }
 
 .diamond h3 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: bold;
   font-size: 32px;
 }
 
-.more-info{
-  font-family: 'Inter', sans-serif;
+.more-info {
+  font-family: "Inter", sans-serif;
   font-size: 32px;
-  color: #172B4D;
+  color: #172b4d;
   text-align: center;
-  margin: 0 24px;
+  
+ margin: 120px 24px 0px 24px;
 }
 
 .items-form {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
 }
 
-.items-form li {  
+.items-form li {
   width: 100%;
-  list-style: none;  
+  list-style: none;
 }
 
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+input {
+  width: 85%;
+  margin-top: 20px;
+}
+
+textarea {
+  width: 85%;
+  height: auto;
+  margin-top: 20px;
+}
