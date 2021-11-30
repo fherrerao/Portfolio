@@ -379,15 +379,21 @@ body {
   font-size: 32px;
 }
 
-
-
-
 .more-info{
   font-family: 'Inter', sans-serif;
   font-size: 32px;
   color: #172B4D;
   text-align: center;
   margin: 0 24px;
+}
 
+.items-form {
+  display: flex;
+  flex-direction: column;  
+}
+
+.items-form li {  
+  width: 100%;
+  list-style: none;  
 }
 
