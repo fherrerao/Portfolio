@@ -1,5 +1,5 @@
 body {
-  background-color: #e5e5e5;
+  background-color: white;
   margin: 0;
 }
 
@@ -383,35 +383,38 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 32px;
   color: #172b4d;
-  text-align: center;
-  
- margin: 120px 24px 0px 24px;
+  text-align: center;  
+  margin: 120px 24px 0px 24px;
 }
 
 .items-form {
   display: flex;
   flex-direction: column;
+  padding: 0;
+  margin: 0 24px;
+  align-items: center;  
 }
 
-.items-form li {
+.li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   list-style: none;
 }
 
+.li input {
+  width: 100%;
+  border: none;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 20px;
+}
 
-form{
+form {
   display: flex;
   flex-direction: column;
   gap: 2em;
-}
-
-input {
-  width: 85%;
-  margin-top: 20px;
-  border: none;
-  font-family: 'Inter', sans-serif;
-  font-size: 15px;
-  background-color: #e5e5e5;
 }
 
 textarea {
@@ -420,42 +423,37 @@ textarea {
   margin-top: 20px;
   font-family: 'Inter', sans-serif;
   font-size: 15px;
-  background-color: #FBF8F7;
+  background-color: #fbf8f7;
+  border:none
 }
 
 .vector-contact {
-  border: 1px solid #DBD8D7;
-
+  border: 1px solid #161615d7;
   margin-right: 45px;
+  width: 150px;
 }
 
-
-.dad{
+.dad {
   display: flex;
-  justify-content: center;
-  
+  justify-content: center;  
 }
 
-.touch{
-
-
-
-
+.touch {
   width: fit-content;
-padding: 12px;
+  padding: 12px;
   background: #ff6b00;
   flex: none;
-  
-
-
   color: #fff;
   font-family: "Inter", sans-serif;
   font-size: 17px;
   font-weight: bold;
-  text-decoration: none;
-
-  
+  text-decoration: none;  
 }
+
+.touch:hover {
+  background-color: black;
+}
+
 
 
 
