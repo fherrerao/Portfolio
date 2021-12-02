@@ -15,6 +15,8 @@ body {
   background-repeat: no-repeat;
   margin: 0;
   background-position: right 300px;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .hamb1 {
@@ -56,6 +58,59 @@ body {
   text-decoration: none;
 }
 
+@media (min-width: 768px) {
+  .header {
+    justify-content: space-between;
+    padding: 0 50px;
+  }
+
+  .mobile-header {
+    display: none;
+  }
+
+  .desktop-header ul {
+    display: flex;
+    column-gap: 32px;
+  }
+
+  .desktop-header ul li {
+    list-style: none;
+  }
+
+  .link {
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    color: #fff;
+  }
+
+  .presentation {
+    background-image: none;
+    display: grid;
+    grid-template-columns: 0.5fr 2.25fr 2.25fr;
+    align-items: center;
+  }
+
+  .background-desktop img{
+    float: right;
+    width: 90%; 
+  }
+
+  .social-media {
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+  }  
+}
+
+@media (max-width: 768px) {
+  .desktop-header {
+    display: none;
+  }
+  .background-desktop {    
+    display: none;
+  }
+}
+
 .name {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
@@ -64,18 +119,7 @@ body {
   line-height: 24px;
   text-align: center;
   color: white;
-  padding: 35px 0;
-}
-
-@media (min-width: 768px) {
-  .header {
-    justify-content: space-between;
-    padding: 0 50px;
-  }
-}
-
-.text-container {
-  width: 100%;
+  padding: 26px 0;
 }
 
 .welcome {
