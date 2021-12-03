@@ -521,7 +521,7 @@ textarea {
 
   .link:hover,
   .link:focus {
-    background-color: rgba(94, 69, 69, 0.87);    
+    background-color: rgba(94, 69, 69, 0.87);
     padding: 5px;
     color: #ff6b00;
     border: 1px solid #f55800;
@@ -533,7 +533,7 @@ textarea {
 
   .name:hover,
   .name:focus {
-    background-color: rgba(94, 69, 69, 0.87);    
+    background-color: rgba(94, 69, 69, 0.87);
     padding: 5px;
     color: #ff6b00;
     border: 1px solid #f55800;
@@ -666,7 +666,7 @@ textarea {
   .projects-container:nth-child(5n) a,
   .projects-container:last-child a {
     display: none;
-  }  
+  }
 
   .container {
     max-width: 85%;
@@ -714,7 +714,7 @@ textarea {
   .container-languages {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-  } 
+  }
 
   .form {
     display: grid;
@@ -725,7 +725,7 @@ textarea {
   }
 
   .more-info {
-    margin: 0;    
+    margin: 0;
   }
 
   .items-form {
