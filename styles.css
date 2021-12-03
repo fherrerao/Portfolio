@@ -619,6 +619,14 @@ textarea {
     border: solid 1px black;
   }
 
+  .about h2 {
+    font-size: 72px;
+  }
+
+  .stories-section h2 {
+    font-size: 40px;
+  }
+
   .projects-container:first-child h2,
   .projects-container:first-child p,
   .projects-container:first-child ul {
@@ -685,10 +693,6 @@ textarea {
   .button-project {
     margin: 0;
     width: 100%;
-  }
-
-  .stories-section h2 {
-    font-size: 40px;
   }
 
   .story {
@@ -781,10 +785,6 @@ textarea {
 
   .xp {
     font-size: 20px;
-  }
-
-  .about h2 {
-    font-size: 72px;
   }
 }
 
@@ -929,6 +929,14 @@ textarea {
     display: flex;
     flex-direction: column-reverse;
     border: solid 1px black;
+  }
+
+  .about h2 {
+    font-size: 72px;
+  }
+
+  .stories-section h2 {
+    font-size: 40px;
   }
 
   .projects-container:first-child h2,
