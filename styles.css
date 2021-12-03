@@ -518,10 +518,10 @@ textarea {
     color: #fff;
     transition: all 0.5s ease-out;
   }
+
   .link:hover,
   .link:focus {
-    background-color: rgba(94, 69, 69, 0.87);
-    color: #333;
+    background-color: rgba(94, 69, 69, 0.87);    
     padding: 5px;
     color: #ff6b00;
     border: 1px solid #f55800;
@@ -530,10 +530,10 @@ textarea {
   .name {
     transition: all 0.5s ease-out;
   }
+
   .name:hover,
   .name:focus {
-    background-color: rgba(94, 69, 69, 0.87);
-    color: #333;
+    background-color: rgba(94, 69, 69, 0.87);    
     padding: 5px;
     color: #ff6b00;
     border: 1px solid #f55800;
@@ -593,6 +593,16 @@ textarea {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 37px 24px;
+  }
+
+  .languages ul {
+    padding: 0 25%;
+    align-items: flex-start;
+  }
+
+  .projects-container h2,
+  .projects-container p {
+    margin: 16px 16px;
   }
 
   .projects-container:first-child {
@@ -656,12 +666,7 @@ textarea {
   .projects-container:nth-child(5n) a,
   .projects-container:last-child a {
     display: none;
-  }
-
-  .projects-container h2,
-  .projects-container p {
-    margin: 16px 16px;
-  }
+  }  
 
   .container {
     max-width: 85%;
@@ -709,12 +714,7 @@ textarea {
   .container-languages {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  .languages ul {
-    padding: 0 25%;
-    align-items: flex-start;
-  }
+  } 
 
   .form {
     display: grid;
@@ -725,8 +725,7 @@ textarea {
   }
 
   .more-info {
-    margin: 0;
-    font-family: 40px;
+    margin: 0;    
   }
 
   .items-form {
