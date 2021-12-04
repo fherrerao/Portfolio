@@ -417,6 +417,10 @@ body {
   list-style: none;
 }
 
+.li:hover {
+  transform: translateX(10px);
+}
+
 .li input {
   width: 100%;
   border: none;
@@ -542,6 +546,7 @@ textarea {
     padding: 5px;
     color: #ff6b00;
     border: 1px solid #f55800;
+    transform: rotate(10deg);
   }
 
   .presentation {
@@ -551,9 +556,43 @@ textarea {
     align-items: center;
   }
 
+  .about img {
+    width: 50%;
+    height: 50%;
+    margin-top: 100px;
+  }
+
+  .stories-section img {
+    width: 100%;
+    margin: 0;
+  }
+
   .background-desktop img {
     float: right;
     width: 90%;
+  }
+
+  .background-desktop img:hover {
+    animation-duration: 2s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 50%;
+      width: 200%;
+    }
+
+    75% {
+      font-size: 300%;
+      margin-left: 25%;
+      width: 150%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
   }
 
   .social-media {
@@ -585,9 +624,10 @@ textarea {
     column-gap: 24px;
   }
 
-  .stories-section img {
+  .stories-section img:hover {
     width: 100%;
     margin: 0;
+    transform: scale(1.02, 1.02);
   }
 
   .stories-section section {
@@ -718,12 +758,6 @@ textarea {
     font-size: 20px;
   }
 
-  .about img {
-    width: 50%;
-    height: 50%;
-    margin-top: 100px;
-  }
-
   .vector-about {
     margin-top: 0;
   }
@@ -769,6 +803,7 @@ textarea {
     background-color: #fff5e1;
     color: #f55800;
     border: 1px solid #f55800;
+    transition: all 0.5s ease-in-out;
   }
 
   .text-1 {
