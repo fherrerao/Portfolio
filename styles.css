@@ -556,6 +556,17 @@ textarea {
     align-items: center;
   }
 
+  .about img {
+    width: 50%;
+    height: 50%;
+    margin-top: 100px;
+  }
+
+  .stories-section img {
+    width: 100%;
+    margin: 0;
+  }
+
   .background-desktop img {
     float: right;
     width: 90%;
@@ -577,6 +588,7 @@ textarea {
       margin-left: 25%;
       width: 150%;
     }
+
     to {
       margin-left: 0%;
       width: 100%;
@@ -610,12 +622,7 @@ textarea {
     display: grid;
     grid-template-columns: 1.3fr 1fr;
     column-gap: 24px;
-  }
-
-  .stories-section img {
-    width: 100%;
-    margin: 0;
-  }
+  }  
 
   .stories-section img:hover {
     width: 100%;
@@ -749,13 +756,7 @@ textarea {
     margin-left: 10%;
     text-align: justify;
     font-size: 20px;
-  }
-
-  .about img {
-    width: 50%;
-    height: 50%;
-    margin-top: 100px;
-  }
+  }  
 
   .vector-about {
     margin-top: 0;
