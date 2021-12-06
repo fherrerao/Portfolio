@@ -1,7 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Portfolio
-Here is the web page link: https://fherrerao.github.io/Portfolio/
 
 > Here I talk about my curriculum and professional xperience.
 
@@ -18,6 +17,10 @@ https://user-images.githubusercontent.com/91301423/144661536-3bf78950-f0ca-4ef8-
 
 - HTML
 - CSS
+
+## Live Demo
+
+[Live Demo Link](https://fherrerao.github.io/Portfolio/)
 
 ## Authors
 
