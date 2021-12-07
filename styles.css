@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: white;
   margin: 0;
@@ -427,6 +431,7 @@ body {
   font-size: 15px;
   font-family: "Inter", sans-serif;
   margin-bottom: 14px;
+  padding: 10px 5px;
 }
 
 form {
@@ -443,6 +448,7 @@ textarea {
   font-size: 15px;
   background-color: #fbf8f7;
   border: none;
+  padding: 0 5px;
 }
 
 .vector-contact {
