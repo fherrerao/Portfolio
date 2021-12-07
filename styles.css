@@ -217,7 +217,7 @@ body {
   font-weight: bold;
   font-size: 17px;
   color: #fff;
-  background-color: #f55800;
+  background-color: #c94b05;
   text-decoration: none;
   padding: 12px;
   width: fit-content;
@@ -260,7 +260,7 @@ body {
   font-size: 17px;
   color: #fff;
   display: block;
-  background-color: #f55800;
+  background-color: #c94b05;
   text-decoration: none;
   padding: 12px 0;
   text-align: center;
@@ -311,7 +311,7 @@ body {
   display: flex;
   align-items: center;
   padding: 12px;
-  background: #f55800;
+  background: #c94b05;
   flex: none;
   order: 2;
   flex-grow: 0;
@@ -454,7 +454,7 @@ textarea {
 .touch {
   width: fit-content;
   padding: 12px;
-  background: #f55800;
+  background: #c94b05;
   flex: none;
   color: #fff;
   font-family: "Inter", sans-serif;
