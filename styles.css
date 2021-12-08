@@ -604,7 +604,6 @@ textarea {
   .stories-section {
     display: grid;
     grid-template-columns: 1.3fr 1fr;
-
     column-gap: 24px;
   }
 
