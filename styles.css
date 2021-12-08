@@ -431,7 +431,7 @@ body {
   font-size: 15px;
   font-family: "Inter", sans-serif;
   margin-bottom: 14px;
-  padding: 10px 5px;
+  padding: 10px 5px;  
 }
 
 form {
@@ -576,30 +576,7 @@ textarea {
   .background-desktop img {
     float: right;
     width: 90%;
-  }
-
-  .background-desktop img:hover {
-    animation-duration: 2s;
-    animation-name: slidein;
-  }
-
-  @keyframes slidein {
-    from {
-      margin-left: 50%;
-      width: 200%;
-    }
-
-    75% {
-      font-size: 300%;
-      margin-left: 25%;
-      width: 150%;
-    }
-
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }
+  }  
 
   .social-media {
     flex-direction: column;
@@ -627,6 +604,7 @@ textarea {
   .stories-section {
     display: grid;
     grid-template-columns: 1.3fr 1fr;
+    
     column-gap: 24px;
   }
 
@@ -746,7 +724,7 @@ textarea {
   }
 
   .multi {
-    margin: 0;
+    margin: 0;    
   }
 
   .about {
@@ -758,7 +736,7 @@ textarea {
     column-gap: 40px;
   }
 
-  .about section {
+  .about div {
     margin-left: 10%;
     text-align: justify;
     font-size: 20px;
