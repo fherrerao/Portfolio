@@ -16,6 +16,10 @@ body {
   background-color: #1c1a19;
 }
 
+.mobile-header {
+  cursor: pointer;
+}
+
 .presentation {
   background-color: #1c1a19;
   padding: 1px 0 120px 0;
