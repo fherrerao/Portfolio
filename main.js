@@ -1,6 +1,9 @@
 const mobileMenu = document.querySelector('.mobile-header');
-const links = document.querySelectorAll('.menu');
+const links = document.querySelector('.desktop-header');
 
-mobileMenu.addEventListener('click', () => {
-  links.style.display = 'block';
+
+mobileMenu.addEventListener('click', () => {  
+  links.classList.toggle('activated');
+  
+  
 });

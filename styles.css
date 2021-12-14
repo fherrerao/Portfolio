@@ -817,6 +817,48 @@ textarea {
 @media (max-width: 992px) {
   .desktop-header {
     display: none;
+    width: 100%;
+  }
+
+  .mobile-header {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+  }
+
+  .desktop-header ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    row-gap: 20px;
+    justify-content: space-around;
+    align-items: flex-start;    
+    margin: 0 24px;
+    padding: 0 0 300px 0;
+    width: 100%;
+  }
+
+  .desktop-header ul li {
+    width: 100%;
+  }
+
+  .linkm {
+    opacity: 0;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px 0;
+    padding-left: 50px;
+    width: 100%;
+  }
+
+  .link {
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
   }
 
   .background-desktop {
@@ -830,4 +872,13 @@ textarea {
   .text-2 {
     display: none;
   }
+
+  .vector-menu {
+    border: 0.5px solid #6F6C6B;
+    margin: 0;
+    width: 100%;
+    margin-top: 15px;
+  }
 }
+
+
