@@ -43,10 +43,16 @@ hamb3.addEventListener('click', () => {
   });
 });
 
-
-let projects = {
-  name: "Art data",
-  description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-  image:"img/imgplaceholder",
-  technologies: "Javascript, Html, Css"  
+function Project (name, description, image, technologies){
+  this.name = name;
+  this.description = description;
+  this.image = image;
+  this.technologies = technologies;  
 }
+
+let names = "Art data";
+let technologies = ["Javascript", "Html", "Css"];
+let description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+let image = "img/imgplaceholder.png";
+
+let project_1 = new Project(names, description, image, technologies);
