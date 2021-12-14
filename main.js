@@ -43,6 +43,8 @@ hamb3.addEventListener('click', () => {
   });
 });
 
+// object constructor
+
 function Project (name, description, image, technologies){
   this.name = name;
   this.description = description;
@@ -50,9 +52,36 @@ function Project (name, description, image, technologies){
   this.technologies = technologies;  
 }
 
+let project01 = new Project(names, description, image, technologies);
+let project02 = new Project(names, description, image, technologies);
+let project03 = new Project(names, description, image, technologies);
+let project04 = new Project(names, description, image, technologies);
+let project05 = new Project(names, description, image, technologies);
+let project06 = new Project(names, description, image, technologies);
+
+
 let names = "Art data";
 let technologies = ["Javascript", "Html", "Css"];
 let description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
 let image = "img/imgplaceholder.png";
 
-let project_1 = new Project(names, description, image, technologies);
+const myProjects = [project01, project02, project03, project04, project05, project06];
+for (let i = 0; i <= myProjects.length; i++) {
+document.querySelector('.projects').innerHTML = myProjects.map(project => {
+  return `<div class="project">
+  <div class="project-image">
+    <img src="${project.image}" alt="${project.name}">
+  </div>
+  <div class="project-info">
+    <h2>${project.name}</h2>
+    <p>${project.description}</p>
+    <div class="project-tech">
+      <h3>Technologies used:</h3>
+      <ul>
+        ${project.technologies.map(tech => `<li>${tech}</li>`).join('')}
+      </ul>
+    </div>
+  </div>
+</div>`
+})
+.join('');};
