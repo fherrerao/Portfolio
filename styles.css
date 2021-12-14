@@ -5,6 +5,7 @@ html {
 body {
   background-color: white;
   margin: 0;
+  position: relative;
 }
 
 .container {
@@ -29,6 +30,7 @@ body {
   background-position: right 300px;
   display: flex;
   flex-direction: column-reverse;
+  z-index: 1;
 }
 
 .hamb1 {
@@ -90,7 +92,7 @@ body {
   letter-spacing: 0.37px;
   color: #f55800;
   flex: none;
-  margin: 120px 12px 12px 12px;
+  margin: 220px 12px 12px 12px;
 }
 
 .profession {
@@ -818,12 +820,21 @@ textarea {
   .desktop-header {
     display: none;
     width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #3c3a39;
+    padding-top: 50px;
+    z-index: 1;
   }
 
   .mobile-header {
-    position: absolute;
+    position: fixed;
     right: 50px;
-    top: 50px;
+    top: 38px;
+    z-index: 2;
   }
 
   .desktop-header ul {
@@ -849,8 +860,12 @@ textarea {
   .header {
     flex-direction: column;
     align-items: flex-start;
-    padding: 25px 0;
+    padding: 5px 0;
     padding-left: 50px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
   }
 
   .link {
@@ -884,7 +899,7 @@ textarea {
     border: 0.5px solid #fff;
     height: 57px;
     width: 120%;
-    margin: 350px -10px 0 -25px;
+    margin: 450px -10px 0 -25px;
     background-color: #fff;
     display: flex;
     justify-content: center;
