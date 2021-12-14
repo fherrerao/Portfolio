@@ -832,7 +832,7 @@ textarea {
     list-style: none;
     row-gap: 20px;
     justify-content: space-around;
-    align-items: flex-start;    
+    align-items: flex-start;
     margin: 0 24px;
     padding: 0;
     width: 100%;
@@ -851,7 +851,6 @@ textarea {
     align-items: flex-start;
     padding: 25px 0;
     padding-left: 50px;
-    width: 100%;
   }
 
   .link {
@@ -859,6 +858,7 @@ textarea {
     font-family: "Inter", sans-serif;
     font-size: 24px;
     font-weight: 700;
+    margin-left: 20px;
   }
 
   .background-desktop {
@@ -874,7 +874,7 @@ textarea {
   }
 
   .vector-menu {
-    border: 0.5px solid #6F6C6B;
+    border: 0.5px solid #6f6c6b;
     margin: 0;
     width: 100%;
     margin-top: 15px;
@@ -882,24 +882,23 @@ textarea {
 
   .vector-menu-l {
     border: 0.5px solid #fff;
-    margin: 0;
     height: 57px;
-    width: 100%;
-    margin-top: 250px;
+    width: 120%;
+    margin: 350px -10px 0 -25px;
     background-color: #fff;
-    display: flex;  
+    display: flex;
     justify-content: center;
     align-items: flex-end;
   }
 
-  .vector-form-l {    
+  .vector-form-l {
     border: 3px solid #0d151e;
     background-color: #0d151e;
     width: 134px;
     height: 1px;
     border-radius: 8px;
-    margin: 0;    
-  }  
+    margin: 0;
+  }
 }
 
 .desktop-header.activated {
@@ -907,7 +906,7 @@ textarea {
 }
 
 .hamb1.activated {
-  transform: rotate(-45deg) translate(-10px, -4.5px );
+  transform: rotate(-45deg) translate(-10px, -4.5px);
 }
 
 .hamb2.activated {
