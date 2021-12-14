@@ -881,4 +881,28 @@ textarea {
   }
 }
 
+.desktop-header.activated {
+  display: flex;
+}
+
+.hamb1.activated {
+  transform: rotate(-45deg) translate(-10px 8px );
+}
+
+.hamb2.activated {
+  opacity: 0;
+}
+
+.hamb3.activated {
+  transform: rotate(45deg) translate(-10px -8px);
+}
+
+.name.activated {
+  opacity: 0;
+}
+
+.header.activated {
+  padding-left: 0;
+}
+
 
