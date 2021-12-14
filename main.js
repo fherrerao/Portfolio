@@ -29,7 +29,7 @@ hamb2.addEventListener('click', () => {
   links.classList.toggle('activated');
   header.classList.toggle('activated');
   nameH.classList.toggle('activated');
-  hamb.forEach(child => {
+  hamb.forEach((child) => {
     child.classList.toggle('activated');
   });
 });
