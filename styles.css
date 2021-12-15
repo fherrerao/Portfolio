@@ -814,6 +814,57 @@ textarea {
   .techs-container-skills {
     margin: 16px;
   }
+
+  .title-modal {
+    margin: 30px;
+  }
+
+  #techs-container {
+    margin: 0 30px 30px 30px;
+  }
+
+  .img-modal {
+    width: 100%;
+    height: 80%;
+    
+  }
+
+  .main-container {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    column-gap: 25px;
+    margin: 0 30px;
+  }
+
+  .paragraph-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .paragraph {
+    margin: 0;
+  }
+
+  .button-container {
+    display: flex;
+    column-gap: 10px;
+    justify-content: start;
+    margin-bottom: 100px;
+  }
+
+  .header-container img {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    position: fixed;
+    right: 100px;
+    top: 80px;
+    cursor: pointer;
+  }
+
+  .modal-container{
+    display: none;    
+  }
 }
 
 @media (max-width: 992px) {
@@ -833,7 +884,7 @@ textarea {
   .mobile-header {
     position: fixed;
     right: 50px;
-    top: 38px;
+    top: 38px;    
     z-index: 2;
   }
 
@@ -916,8 +967,7 @@ textarea {
   }
 
   .modal-container{
-    display: none;
-    
+    display: none;    
   }
 
   .show {
@@ -942,12 +992,17 @@ textarea {
 
   .img-modal {
     width: 100%;
+    height: auto;
   }
 
   .button-container {
     display: flex;
     column-gap: 19px;
   }
+
+  #techs-container, .paragraph-container {
+    margin: 10px 16px;
+  }  
 }
 
 .desktop-header.activated {
@@ -980,8 +1035,11 @@ textarea {
   position: fixed;
   left: 0;
   top: 0;
-  height: 100vh;
-  width: 100wh;  
+  bottom: 0;
+  right: 0;
+  height: auto;
+  width: auto;  
   background-color: azure;
   margin: 40px 20px;
+  overflow-y: auto;
 }
