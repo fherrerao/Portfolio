@@ -914,6 +914,40 @@ textarea {
     border-radius: 8px;
     margin: 0;
   }
+
+  .modal-container{
+    display: none;
+    
+  }
+
+  .show {
+    opacity: 1;
+  }
+
+  .title-modal {
+    font-family: 'Roboto', sans-serif;
+    color: #172B4D;
+    font-size: 32px;
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .header-container img {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+  }
+
+  .img-modal {
+    width: 100%;
+  }
+
+  .button-container {
+    display: flex;
+    column-gap: 19px;
+  }
 }
 
 .desktop-header.activated {
@@ -938,4 +972,16 @@ textarea {
 
 .header.activated {
   padding: 0;
+}
+
+.modal-container.activated {
+  display: block;
+  opacity: 1;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100wh;  
+  background-color: azure;
+  margin: 40px 20px;
 }

@@ -45,43 +45,83 @@ hamb3.addEventListener('click', () => {
 
 // object constructor
 
-function Project (name, description, image, technologies){
-  this.name = name;
+let names = "Multi Post Stories";
+let technologies = ["html", "Bootstrap", "Ruby"];
+let description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+let image = "img/snapshootportfolio.png";
+let live = "https://fherrerao.github.io/Portfolio/";
+let source = "https://github.com/fherrerao/Portfolio";
+
+function Project (names, description, image, technologies, live, source){
+  this.names = names;
   this.description = description;
   this.image = image;
-  this.technologies = technologies;  
+  this.technologies = technologies;
+  this.live = live;
+  this.source = source;
 }
 
-let project01 = new Project(names, description, image, technologies);
-let project02 = new Project(names, description, image, technologies);
-let project03 = new Project(names, description, image, technologies);
-let project04 = new Project(names, description, image, technologies);
-let project05 = new Project(names, description, image, technologies);
-let project06 = new Project(names, description, image, technologies);
-
-
-let names = "Art data";
-let technologies = ["Javascript", "Html", "Css"];
-let description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-let image = "img/imgplaceholder.png";
+let project01 = new Project(names, description, image, technologies, live, source);
+let project02 = new Project(names, description, image, technologies, live, source);
+let project03 = new Project(names, description, image, technologies, live, source);
+let project04 = new Project(names, description, image, technologies, live, source);
+let project05 = new Project(names, description, image, technologies, live, source);
+let project06 = new Project(names, description, image, technologies, live, source);
 
 const myProjects = [project01, project02, project03, project04, project05, project06];
-for (let i = 0; i <= myProjects.length; i++) {
-document.querySelector('.projects').innerHTML = myProjects.map(project => {
-  return `<div class="project">
-  <div class="project-image">
-    <img src="${project.image}" alt="${project.name}">
-  </div>
-  <div class="project-info">
-    <h2>${project.name}</h2>
-    <p>${project.description}</p>
-    <div class="project-tech">
-      <h3>Technologies used:</h3>
-      <ul>
-        ${project.technologies.map(tech => `<li>${tech}</li>`).join('')}
-      </ul>
-    </div>
-  </div>
-</div>`
-})
-.join('');};
+
+// Creating elements in HTML
+
+const divTag = document.createElement('DIV');
+divTag.classList.add('projects-container');
+
+const h2Tag = document.createElement('H2');
+h2Tag.textContent = project01.names;
+
+const pTag = document.createElement('P');
+pTag.textContent = project01.description;
+
+const ulTag = document.createElement('UL');
+ulTag.classList.add('techs-container-skills');
+
+const liTag1 = document.createElement('LI');
+liTag1.classList.add('techs');
+liTag1.textContent = project01.technologies[0];
+
+const liTag2 = document.createElement('LI');
+liTag2.classList.add('techs');
+liTag2.textContent = project01.technologies[1];
+
+const liTag3 = document.createElement('LI');
+liTag3.classList.add('techs');
+liTag3.textContent = project01.technologies[2];
+
+const aTag = document.createElement('A');
+aTag.classList.add('button-project');
+aTag.textContent = 'See project';
+
+
+
+const divH = document.querySelector('.projects');
+divH.appendChild(divTag);
+
+const h2H = document.querySelector('.projects-container');
+h2H.appendChild(h2Tag);
+
+const pH = document.querySelector('.projects-container');
+pH.appendChild(pTag);
+
+const ulH = document.querySelector('.projects-container');
+ulH.appendChild(ulTag);
+
+const liH1 = document.querySelector('.techs-container-skills');
+liH1.appendChild(liTag1);
+
+const liH2 = document.querySelector('.techs-container-skills');
+liH2.appendChild(liTag2);
+
+const liH3 = document.querySelector('.techs-container-skills');
+liH3.appendChild(liTag3);
+
+const aH = document.querySelector('.projects-container');
+aH.appendChild(aTag);
