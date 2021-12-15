@@ -54,3 +54,11 @@ formulario.addEventListener('submit', function(e){
   }
 });
 
+function message(){
+  const error = document.createElement('P');
+  error.textContent = 'The email should be with lowercase!';
+  error.classList.add('error');
+
+  const emailH = document.querySelector('.items-form');
+  emailH.appendChild(error);
+}
