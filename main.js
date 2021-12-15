@@ -42,3 +42,15 @@ hamb3.addEventListener('click', () => {
     child.classList.toggle('activated');
   });
 });
+
+const formulario = document.querySelector('.form');
+const email = document.querySelector('.email');
+
+formulario.addEventListener('submit', function(e){
+  
+  if(email.value != email.value.toLowerCase()){
+    console.log("The email should be with lowercase!");    
+    e.preventDefault();
+  }
+});
+
