@@ -607,6 +607,15 @@ textarea {
     padding: 135px 0;
   }
 
+  .header-container img {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    position: fixed;
+    right: 100px;
+    top: 80px;
+    cursor: pointer;
+  }
+
   .stories-section {
     display: grid;
     grid-template-columns: 1.3fr 1fr;
@@ -814,6 +823,55 @@ textarea {
   .techs-container-skills {
     margin: 16px;
   }
+
+  .title-modal {
+    margin: 30px;
+  }
+
+  #techs-container {
+    margin: 0 30px 30px 30px;
+  }
+
+  .img-modal {
+    width: 100%;
+    height: 80%;
+  }
+
+  .main-container {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    column-gap: 25px;
+    margin: 0 30px;
+  }
+
+  .paragraph-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .paragraph {
+    margin: 0;
+  }
+
+  .button-container {
+    display: flex;
+    column-gap: 10px;
+    justify-content: start;
+    margin-bottom: 100px;
+  }
+
+  .modal-container {
+    display: none;
+  }
+
+  .error {
+    width: auto;
+    height: auto;
+    background-color: rgb(141, 3, 3);
+    color: #fff;
+    padding: 5px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -914,6 +972,53 @@ textarea {
     border-radius: 8px;
     margin: 0;
   }
+
+  .modal-container {
+    display: none;
+  }
+
+  .show {
+    opacity: 1;
+  }
+
+  .title-modal {
+    font-family: "Roboto", sans-serif;
+    color: #172b4d;
+    font-size: 32px;
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .header-container img {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+  }
+
+  .img-modal {
+    width: 100%;
+    height: auto;
+  }
+
+  .button-container {
+    display: flex;
+    column-gap: 19px;
+  }
+
+  #techs-container,
+  .paragraph-container {
+    margin: 10px 16px;
+  }
+
+  .error {
+    width: auto;
+    height: auto;
+    background-color: rgb(141, 3, 3);
+    color: #fff;
+    padding: 5px;
+  }
 }
 
 .desktop-header.activated {
@@ -938,4 +1043,19 @@ textarea {
 
 .header.activated {
   padding: 0;
+}
+
+.modal-container.activated {
+  display: block;
+  opacity: 1;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: auto;
+  width: auto;
+  background-color: azure;
+  margin: 40px 20px;
+  overflow-y: auto;
 }
