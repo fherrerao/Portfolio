@@ -206,6 +206,16 @@ for (let i=0; i<cards.length; i++) {
   pages[`project${i}`].source = cards[i].source;
 }
 
+const pages = {}
+for (let i = 0; i < titles.length; i++) {
+  pages[`project${i}`] = {};
+  pages[`project${i}`].title = titles[i];
+  pages[`project${i}`].description = descriptions[i];
+  pages[`project${i}`].technologies = technologies[i];
+  pages[`project${i}`].image = images[i];
+  pages[`project${i}`].live = "https://fherrerao.github.io/Portfolio/"
+  pages[`project${i}`].source = "https://github.com/fherrerao/Portfolio";
+}
 
 
 function modals(e) {
@@ -219,32 +229,4 @@ function modals(e) {
   paragraph.textContent = pages[e].description;
   buttonLive.href = pages[e].live;
   buttonSource.href = pages[e].source;
-
-
-  // if(e === "project1") {
-  //   modalContainer.classList.toggle('activated');
-  //   for (let i of cards){      
-  //     title.textContent = i.names;
-  //     techs1.textContent = i.technologies[0];
-  //     techs2.textContent = i.technologies[1];
-  //     techs3.textContent = i.technologies[2];
-  //     imageModal.src = i.image;
-  //     paragraph.textContent = i.description;
-  //     buttonLive.href = i.live;
-  //     buttonSource.href = i.source;
-  //   }
-    
-  // }
-
-  // else if (e === "project2") {
-  //   modalContainer.classList.toggle('activated');
-  //   title.textContent = project_2.names;
-  //   techs1.textContent = project_2.technologies[0];
-  //   techs2.textContent = project_2.technologies[1];
-  //   techs3.textContent = project_2.technologies[2];
-  //   imageModal.src = project_2.image;
-  //   paragraph.textContent = project_2.description;
-  //   buttonLive.href = project_2.live;
-  //   buttonSource.href = project_2.source;
-  // }
 }
