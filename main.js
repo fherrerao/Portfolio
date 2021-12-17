@@ -43,67 +43,65 @@ hamb3.addEventListener('click', () => {
   });
 });
 
-// Object constructor
+//Entries
+let titles = [];
+document.querySelectorAll('.text-1').forEach((item) => {
+  titles.push(item.textContent);
+});
 
-let names = "Multi Post Stories";
-let technologies = ["html", "Bootstrap", "Ruby"];
-let description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita."
-let image = "img/imgplaceholder0.png";
-let live = "https://fherrerao.github.io/Portfolio/";
-let source = "https://github.com/fherrerao/Portfolio";
+let descriptions = [];
+document.querySelectorAll('.description').forEach((item) => {
+  descriptions.push(item.textContent);
+});
 
-let names2 = "Multi Post Stories";
-let technologies2 = ["html", "Bootstrap", "Ruby"];
-let description2 = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita."
-let image2 = "img/imgplaceholder1.png";
-let live2 = "https://fherrerao.github.io/Portfolio/";
-let source2 = "https://github.com/fherrerao/Portfolio";
+let technologies = [];
+let techs = [];
+document.querySelectorAll('.techs').forEach((item) => {
+  techs.push(item.textContent);
+});
 
-function Project (names, description, image, technologies, live, source){
-  this.names = names;
-  this.description = description;
-  this.image = image;
-  this.technologies = technologies;
-  this.live = live;
-  this.source = source;
-}
+technologies.push(techs.slice(0, 4));
+technologies.push(techs.slice(4, 7));
+technologies.push(techs.slice(7, 10));
+technologies.push(techs.slice(10, 13));
+technologies.push(techs.slice(13, 16));
+technologies.push(techs.slice(16, 19));
+technologies.push(techs.slice(19, 22));
+console.log(technologies);
 
-let project_0 = new Project(names, description, image, technologies, live, source);
-let project_1 = new Project(names2, description2, image2, technologies2, live2, source2);
-let project_2 = new Project(names2, description2, image, technologies2, live2, source2);
-let project_3 = new Project(names2, description2, image2, technologies2, live2, source2);
-let project_4 = new Project(names2, description2, image2, technologies2, live2, source2);
-let project_5 = new Project(names2, description2, image2, technologies2, live2, source2);
-let project_6 = new Project(names2, description2, image2, technologies2, live2, source2);
 
-let cards = [];
-
-cards.push(project_0);
-cards.push(project_1);
-cards.push(project_2);
-cards.push(project_3);
-cards.push(project_4);
-cards.push(project_5);
-cards.push(project_6);
-
-const myProjects = [project_0, project_1];
+let images = [
+  'img/imgplaceholder0.png',
+  'img/imgplaceholder1.png',
+  'img/imgplaceholder1.png',
+  'img/imgplaceholder1.png',
+  'img/imgplaceholder1.png',
+  'img/imgplaceholder1.png',
+  'img/imgplaceholder1.png'
+]
 
 const closeButton = document.createElement('IMG');
 closeButton.classList.add('close-button');
 closeButton.src = 'img/close.svg';
 closeButton.addEventListener('click', () => {
   modalContainer.classList.toggle('activated');
+  parentModal.classList.toggle('activated');
 });
 
 const clickButtonProject2 = document.querySelectorAll('.button-project');
 clickButtonProject2.forEach((item) => {
   item.addEventListener('click', (e) => {
     modals(e.target.id);
-  })  
+  })
 });
 
-
 //Creating the modal window first project
+
+const parentModal = document.createElement('DIV');
+parentModal.classList.add('parent-modal');
+
+const parentModalH = document.querySelector('.projects');
+parentModalH.appendChild(parentModal);
 
 const modalContainer = document.createElement('DIV');
 modalContainer.classList.add('modal-container');
@@ -150,7 +148,7 @@ const buttonSource = document.createElement('A');
 buttonSource.classList.add('button-project');
 buttonSource.textContent = 'See Source';
 
-const modalContainerH = document.querySelector('.projects');
+const modalContainerH = document.querySelector('.parent-modal');
 modalContainerH.appendChild(modalContainer);
 
 const headerContainerH = document.querySelector('.modal-container');
@@ -196,17 +194,6 @@ const closeButtonH = document.querySelector('.header-container');
 closeButtonH.appendChild(closeButton);
 
 const pages = {}
-for (let i=0; i<cards.length; i++) {
-  pages[`project${i}`] = {};
-  pages[`project${i}`].title = cards[i].names;
-  pages[`project${i}`].description = cards[i].description;
-  pages[`project${i}`].technologies = cards[i].technologies;
-  pages[`project${i}`].image = cards[i].image;
-  pages[`project${i}`].live = cards[i].live;
-  pages[`project${i}`].source = cards[i].source;
-}
-
-const pages = {}
 for (let i = 0; i < titles.length; i++) {
   pages[`project${i}`] = {};
   pages[`project${i}`].title = titles[i];
@@ -217,10 +204,10 @@ for (let i = 0; i < titles.length; i++) {
   pages[`project${i}`].source = "https://github.com/fherrerao/Portfolio";
 }
 
-
 function modals(e) {
   console.log(e);
   modalContainer.classList.toggle('activated');
+  parentModal.classList.toggle('activated');
   title.textContent = pages[e].title;
   techs1.textContent = pages[e].technologies[0];
   techs2.textContent = pages[e].technologies[1];
