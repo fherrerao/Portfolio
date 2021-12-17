@@ -43,7 +43,7 @@ hamb3.addEventListener('click', () => {
   });
 });
 
-// object constructor
+// Object constructor
 
 let names = "Multi Post Stories";
 let technologies = ["html", "Bootstrap", "Ruby"];
@@ -68,15 +68,25 @@ function Project (names, description, image, technologies, live, source){
   this.source = source;
 }
 
-let project_1 = new Project(names, description, image, technologies, live, source);
-let project_2 = new Project(names2, description2, image2, technologies2, live2, source2);
+let project_0 = new Project(names, description, image, technologies, live, source);
+let project_1 = new Project(names2, description2, image2, technologies2, live2, source2);
+let project_2 = new Project(names2, description2, image, technologies2, live2, source2);
+let project_3 = new Project(names2, description2, image2, technologies2, live2, source2);
+let project_4 = new Project(names2, description2, image2, technologies2, live2, source2);
+let project_5 = new Project(names2, description2, image2, technologies2, live2, source2);
+let project_6 = new Project(names2, description2, image2, technologies2, live2, source2);
 
 let cards = [];
 
+cards.push(project_0);
 cards.push(project_1);
 cards.push(project_2);
+cards.push(project_3);
+cards.push(project_4);
+cards.push(project_5);
+cards.push(project_6);
 
-const myProjects = [project_1, project_2];
+const myProjects = [project_0, project_1];
 
 const closeButton = document.createElement('IMG');
 closeButton.classList.add('close-button');
@@ -185,28 +195,56 @@ buttonSourceH.appendChild(buttonSource);
 const closeButtonH = document.querySelector('.header-container');
 closeButtonH.appendChild(closeButton);
 
-function modals(e) {  
-  if(e === "btn-story") {
-    modalContainer.classList.toggle('activated');
-    title.textContent = project_1.names;
-    techs1.textContent = project_1.technologies[0];
-    techs2.textContent = project_1.technologies[1];
-    techs3.textContent = project_1.technologies[2];
-    imageModal.src = project_1.image;
-    paragraph.textContent = project_1.description;
-    buttonLive.href = project_1.live;
-    buttonSource.href = project_1.source;
-  }
+const pages = {}
+for (let i=0; i<cards.length; i++) {
+  pages[`project${i}`] = {};
+  pages[`project${i}`].title = cards[i].names;
+  pages[`project${i}`].description = cards[i].description;
+  pages[`project${i}`].technologies = cards[i].technologies;
+  pages[`project${i}`].image = cards[i].image;
+  pages[`project${i}`].live = cards[i].live;
+  pages[`project${i}`].source = cards[i].source;
+}
 
-  else if (e === "btn-project") {
-    modalContainer.classList.toggle('activated');
-    title.textContent = project_2.names;
-    techs1.textContent = project_2.technologies[0];
-    techs2.textContent = project_2.technologies[1];
-    techs3.textContent = project_2.technologies[2];
-    imageModal.src = project_2.image;
-    paragraph.textContent = project_2.description;
-    buttonLive.href = project_2.live;
-    buttonSource.href = project_2.source;
-  }
+
+
+function modals(e) {
+  console.log(e);
+  modalContainer.classList.toggle('activated');
+  title.textContent = pages[e].title;
+  techs1.textContent = pages[e].technologies[0];
+  techs2.textContent = pages[e].technologies[1];
+  techs3.textContent = pages[e].technologies[2];
+  imageModal.src = pages[e].image;
+  paragraph.textContent = pages[e].description;
+  buttonLive.href = pages[e].live;
+  buttonSource.href = pages[e].source;
+
+
+  // if(e === "project1") {
+  //   modalContainer.classList.toggle('activated');
+  //   for (let i of cards){      
+  //     title.textContent = i.names;
+  //     techs1.textContent = i.technologies[0];
+  //     techs2.textContent = i.technologies[1];
+  //     techs3.textContent = i.technologies[2];
+  //     imageModal.src = i.image;
+  //     paragraph.textContent = i.description;
+  //     buttonLive.href = i.live;
+  //     buttonSource.href = i.source;
+  //   }
+    
+  // }
+
+  // else if (e === "project2") {
+  //   modalContainer.classList.toggle('activated');
+  //   title.textContent = project_2.names;
+  //   techs1.textContent = project_2.technologies[0];
+  //   techs2.textContent = project_2.technologies[1];
+  //   techs3.textContent = project_2.technologies[2];
+  //   imageModal.src = project_2.image;
+  //   paragraph.textContent = project_2.description;
+  //   buttonLive.href = project_2.live;
+  //   buttonSource.href = project_2.source;
+  // }
 }
