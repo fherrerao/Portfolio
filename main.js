@@ -43,20 +43,19 @@ hamb3.addEventListener('click', () => {
   });
 });
 
-
-//Entries
-let titles = [];
+// Entries
+const titles = [];
 document.querySelectorAll('.text-1').forEach((item) => {
   titles.push(item.textContent);
 });
 
-let descriptions = [];
+const descriptions = [];
 document.querySelectorAll('.description').forEach((item) => {
   descriptions.push(item.textContent);
 });
 
-let technologies = [];
-let techs = [];
+const technologies = [];
+const techs = [];
 document.querySelectorAll('.techs').forEach((item) => {
   techs.push(item.textContent);
 });
@@ -68,18 +67,22 @@ technologies.push(techs.slice(10, 13));
 technologies.push(techs.slice(13, 16));
 technologies.push(techs.slice(16, 19));
 technologies.push(techs.slice(19, 22));
-console.log(technologies);
 
-
-let images = [
+const images = [
   'img/imgplaceholder0.png',
   'img/imgplaceholder1.png',
   'img/imgplaceholder1.png',
   'img/imgplaceholder1.png',
   'img/imgplaceholder1.png',
   'img/imgplaceholder1.png',
-  'img/imgplaceholder1.png'
-]
+  'img/imgplaceholder1.png',
+];
+
+const parentModal = document.createElement('DIV');
+parentModal.classList.add('parent-modal');
+
+const modalContainer = document.createElement('DIV');
+modalContainer.classList.add('modal-container');
 
 const closeButton = document.createElement('IMG');
 closeButton.classList.add('close-button');
@@ -89,23 +92,10 @@ closeButton.addEventListener('click', () => {
   parentModal.classList.toggle('activated');
 });
 
-const clickButtonProject2 = document.querySelectorAll('.button-project');
-clickButtonProject2.forEach((item) => {
-  item.addEventListener('click', (e) => {
-    modals(e.target.id);
-  })
-});
-
-//Creating the modal window first project
-
-const parentModal = document.createElement('DIV');
-parentModal.classList.add('parent-modal');
+// Creating the modal window first project
 
 const parentModalH = document.querySelector('.projects');
 parentModalH.appendChild(parentModal);
-
-const modalContainer = document.createElement('DIV');
-modalContainer.classList.add('modal-container');
 
 const headerContainer = document.createElement('DIV');
 headerContainer.classList.add('header-container');
@@ -194,25 +184,22 @@ buttonSourceH.appendChild(buttonSource);
 const closeButtonH = document.querySelector('.header-container');
 closeButtonH.appendChild(closeButton);
 
-const pages = {}
-for (let i = 0; i < titles.length; i++) {
+const pages = {};
+for (let i = 0; i < titles.length; i += 1) {
   pages[`project${i}`] = {};
   pages[`project${i}`].title = titles[i];
   pages[`project${i}`].description = descriptions[i];
   pages[`project${i}`].technologies = technologies[i];
   pages[`project${i}`].image = images[i];
-  pages[`project${i}`].live = "https://fherrerao.github.io/Portfolio/"
-  pages[`project${i}`].source = "https://github.com/fherrerao/Portfolio";
+  pages[`project${i}`].live = 'https://fherrerao.github.io/Portfolio/';
+  pages[`project${i}`].source = 'https://github.com/fherrerao/Portfolio';
 }
 
 function modals(e) {
-  console.log(e);
   modalContainer.classList.toggle('activated');
   parentModal.classList.toggle('activated');
   title.textContent = pages[e].title;
-  techs1.textContent = pages[e].technologies[0];
-  techs2.textContent = pages[e].technologies[1];
-  techs3.textContent = pages[e].technologies[2];
+  [techs1.textContent, techs2.textContent, techs3.textContent] = pages[e].technologies;
   imageModal.src = pages[e].image;
   paragraph.textContent = pages[e].description;
   buttonLive.href = pages[e].live;
@@ -227,6 +214,13 @@ function message() {
   emailH.appendChild(error);
 }
 
+const clickButtonProject2 = document.querySelectorAll('.button-project');
+clickButtonProject2.forEach((item) => {
+  item.addEventListener('click', (e) => {
+    modals(e.target.id);
+  });
+});
+
 const form = document.querySelector('.form');
 const email = document.querySelector('.email');
 
@@ -236,4 +230,3 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
   }
 });
-
