@@ -836,7 +836,7 @@ textarea {
 
   .img-modal {
     width: 100%;
-    max-height: 450px;
+    max-height: 300px;
   }
 
   .main-container {
@@ -864,10 +864,12 @@ textarea {
     column-gap: 10px;
     justify-content: start;
     margin-bottom: 100px;
+    margin-top: 105px;
   }
 
   .modal-container {
     display: none;
+    margin: 45px 140px;
   }
 
   .modal-container,
@@ -992,6 +994,7 @@ textarea {
   .modal-container,
   .parent-modal {
     display: none;
+    margin: 60px 16px;
   }
 
   .show {
@@ -1073,6 +1076,7 @@ textarea {
   background-color: rgba(0, 0, 0, 0.7);
   width: 100em;
   height: 100em;
+  margin: 0;
 }
 
 .modal-container.activated {
@@ -1083,7 +1087,5 @@ textarea {
   top: 0;
   bottom: 0;
   right: 0;
-  background-color: azure;
-  margin: 45px 140px;
-  overflow-y: auto;
+  background-color: #fff;
 }
