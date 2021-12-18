@@ -29,6 +29,17 @@ https://user-images.githubusercontent.com/91301423/144661536-3bf78950-f0ca-4ef8-
 - GitHub: [@fherrerao](https://github.com/fherrerao)
 - Twitter: [@fherrera0206](https://twitter.com/fherrera0206)
 
+👤 **Kyrillos Hany
+
+- GitHub: [@Bondok6](https://github.com/Bondok6)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+
+👤 **Sergio Valadez
+
+- GitHub: [@sergiogval](https://github.com/sergiogval/)
+- Tweeter [@srgvldz](https://twitter.com/srgvldz)
+- LinkedIn [@Sergio_Valadez](https://www.linkedin.com/in/sergio-valadez-282153216/)
+
 
 ## 🤝 Contributing
 
