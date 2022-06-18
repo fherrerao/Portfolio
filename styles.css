@@ -246,7 +246,7 @@ body {
   font-family: "Crete Round", sans-serif;
   font-size: 32px;
   font-weight: 400;
-  color: #fff;
+  color: black;
   padding-top: 84px;
   margin: 0 24px;
 }
@@ -254,14 +254,14 @@ body {
 .projects-container p {
   font-family: "Inter", sans-serif;
   font-size: 16px;
-  color: #fff;
+  color: black;
   margin: 0 24px;
 }
 
 .projects-container li {
   font-family: "Inter", sans-serif;
   font-size: 16px;
-  color: #fff;
+  color: black;
 }
 
 .button-project {
@@ -649,12 +649,11 @@ textarea {
   }
 
   .projects-container:first-child {
-    background-image: url("");
+    background-image: url("https://raw.githubusercontent.com/fherrerao/budget-app-capstone/develop/app/assets/images/budget.png");    
     background-size: cover;
-    padding: 0;
     display: flex;
-    flex-direction: column-reverse;
-    border: solid 1px black;
+    flex-direction: column;
+    justify-content: flex-end;    
   }
 
   .about h2 {
@@ -665,59 +664,64 @@ textarea {
     font-size: 40px;
   }
 
-  .projects-container:first-child h2,
+  /* .projects-container:first-child h2,
   .projects-container:first-child p,
   .projects-container:first-child ul {
     display: none;
-  }
+  } */
 
   .projects-container:nth-child(2n) {
-    background-image: url("img/imgplaceholder2.png");
-    background-size: cover;
+    background-image: url("https://raw.githubusercontent.com/fherrerao/Recipe-App-Capstone/develop/screenshot.png");
+    background-size: fill;    
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    background-position: top;
   }
 
   .projects-container:nth-child(3n) {
-    background-image: url("img/imgplaceholder3.png");
-    background-size: cover;
+    background-image: url("https://user-images.githubusercontent.com/91301423/156890177-7743b14d-e596-4c77-b0a1-d81bdf141752.png");
+    background-size: contain;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    background-position: top;
   }
 
   .projects-container:nth-child(4n) {
-    background-image: url("img/imgplaceholder4.png");
+    background-image: url("https://user-images.githubusercontent.com/91301423/156767747-742c3464-b9c6-4109-89a8-e6725a791e11.png");
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    background-position: left;
   }
 
   .projects-container:nth-child(5n) {
-    background-image: url("img/imgplaceholder2.png");
+    background-image: url("https://user-images.githubusercontent.com/91301423/157890781-cde43192-ebad-47bc-b7de-4f781ea0298f.png");
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    background-position: top;
   }
 
-  .projects-container:last-child {
-    background-image: url("img/imgplaceholder3.png");
+  .projects-container:nth-child(6n) {
+    background-image: url("https://user-images.githubusercontent.com/91301423/155862896-0c6997f8-8fa2-4558-9604-6f1d8dd8296f.png");
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    background-position: left;
   }
 
-  .projects-container:nth-child(2n) a,
+  /* .projects-container:nth-child(2n) a,
   .projects-container:nth-child(3n) a,
   .projects-container:nth-child(4n) a,
   .projects-container:nth-child(5n) a,
   .projects-container:last-child a {
     display: none;
-  }
+  } */
 
   .container {
     max-width: 85%;
@@ -821,7 +825,7 @@ textarea {
   }
 
   .techs-container-skills {
-    margin: 16px;
+    margin: 16px;  
   }
 
   .title-modal {
@@ -837,6 +841,7 @@ textarea {
   .img-modal {
     width: 100%;
     max-height: 300px;
+    border: 1px solid #f55800;
   }
 
   .main-container {

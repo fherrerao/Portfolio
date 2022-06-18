@@ -69,14 +69,35 @@ technologies.push(techs.slice(16, 19));
 technologies.push(techs.slice(19, 22));
 
 const images = [
-  'img/imgplaceholder0.png',
-  'img/imgplaceholder1.png',
-  'img/imgplaceholder1.png',
-  'img/imgplaceholder1.png',
-  'img/imgplaceholder1.png',
-  'img/imgplaceholder1.png',
-  'img/imgplaceholder1.png',
+  'https://raw.githubusercontent.com/fherrerao/budget-app-capstone/develop/app/assets/images/hotel.png',
+  'https://raw.githubusercontent.com/fherrerao/budget-app-capstone/develop/app/assets/images/budget.png',
+  'https://raw.githubusercontent.com/fherrerao/Recipe-App-Capstone/develop/screenshot.png',
+  'https://user-images.githubusercontent.com/91301423/156890177-7743b14d-e596-4c77-b0a1-d81bdf141752.png',
+  'https://user-images.githubusercontent.com/91301423/156767747-742c3464-b9c6-4109-89a8-e6725a791e11.png',
+  'https://user-images.githubusercontent.com/91301423/157890781-cde43192-ebad-47bc-b7de-4f781ea0298f.png',
+  'https://user-images.githubusercontent.com/91301423/155862896-0c6997f8-8fa2-4558-9604-6f1d8dd8296f.png',
 ];
+
+const pages_link = [
+  'https://reservify.netlify.app/',
+  'https://budget-app-cap.herokuapp.com/',
+  'https://infinite-stream-75498.herokuapp.com/',
+  'https://fherrerao.github.io/Capstone-Group-Project/dist/',
+  'https://ixboy.github.io/Space-Travelers-Hub/',
+  'https://fherrerao.github.io/Covid-Metrics/',
+  'https://bookstore-fh.herokuapp.com/'
+];
+
+const github_links = [
+  'https://github.com/Yothu/reservify-back-end',
+  'https://github.com/fherrerao/budget-app-capstone',
+  'https://github.com/fherrerao/Recipe-App-Capstone',
+  'https://github.com/fherrerao/Capstone-Group-Project',
+  'https://github.com/fherrerao/Space-Travelers-Hub',
+  'https://github.com/fherrerao/Covid-Metrics',
+  'https://github.com/fherrerao/Bookstore'
+];
+
 
 const parentModal = document.createElement('DIV');
 parentModal.classList.add('parent-modal');
@@ -191,8 +212,8 @@ for (let i = 0; i < titles.length; i += 1) {
   pages[`project${i}`].description = descriptions[i];
   pages[`project${i}`].technologies = technologies[i];
   pages[`project${i}`].image = images[i];
-  pages[`project${i}`].live = 'https://fherrerao.github.io/Portfolio/';
-  pages[`project${i}`].source = 'https://github.com/fherrerao/Portfolio';
+  pages[`project${i}`].live = pages_link[i];
+  pages[`project${i}`].source = github_links[i];
 }
 
 function modals(e) {
@@ -203,7 +224,9 @@ function modals(e) {
   imageModal.src = pages[e].image;
   paragraph.textContent = pages[e].description;
   buttonLive.href = pages[e].live;
+  buttonLive.target = '_blank';
   buttonSource.href = pages[e].source;
+  buttonSource.target = '_blank';
 }
 
 function message() {
