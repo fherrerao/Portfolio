@@ -649,11 +649,11 @@ textarea {
   }
 
   .projects-container:first-child {
-    background-image: url("https://raw.githubusercontent.com/fherrerao/budget-app-capstone/develop/app/assets/images/budget.png");    
+    background-image: url("https://raw.githubusercontent.com/fherrerao/budget-app-capstone/develop/app/assets/images/budget.png");
     background-size: cover;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;    
+    justify-content: flex-end;
   }
 
   .about h2 {
@@ -672,7 +672,7 @@ textarea {
 
   .projects-container:nth-child(2n) {
     background-image: url("https://raw.githubusercontent.com/fherrerao/Recipe-App-Capstone/develop/screenshot.png");
-    background-size: fill;    
+    background-size: contain;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -825,7 +825,7 @@ textarea {
   }
 
   .techs-container-skills {
-    margin: 16px;  
+    margin: 16px;
   }
 
   .title-modal {

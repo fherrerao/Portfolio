@@ -78,26 +78,25 @@ const images = [
   'https://user-images.githubusercontent.com/91301423/155862896-0c6997f8-8fa2-4558-9604-6f1d8dd8296f.png',
 ];
 
-const pages_link = [
+const pagesLink = [
   'https://reservify.netlify.app/',
   'https://budget-app-cap.herokuapp.com/',
   'https://infinite-stream-75498.herokuapp.com/',
   'https://fherrerao.github.io/Capstone-Group-Project/dist/',
   'https://ixboy.github.io/Space-Travelers-Hub/',
   'https://fherrerao.github.io/Covid-Metrics/',
-  'https://bookstore-fh.herokuapp.com/'
+  'https://bookstore-fh.herokuapp.com/',
 ];
 
-const github_links = [
+const githubLinks = [
   'https://github.com/Yothu/reservify-back-end',
   'https://github.com/fherrerao/budget-app-capstone',
   'https://github.com/fherrerao/Recipe-App-Capstone',
   'https://github.com/fherrerao/Capstone-Group-Project',
   'https://github.com/fherrerao/Space-Travelers-Hub',
   'https://github.com/fherrerao/Covid-Metrics',
-  'https://github.com/fherrerao/Bookstore'
+  'https://github.com/fherrerao/Bookstore',
 ];
-
 
 const parentModal = document.createElement('DIV');
 parentModal.classList.add('parent-modal');
@@ -212,8 +211,8 @@ for (let i = 0; i < titles.length; i += 1) {
   pages[`project${i}`].description = descriptions[i];
   pages[`project${i}`].technologies = technologies[i];
   pages[`project${i}`].image = images[i];
-  pages[`project${i}`].live = pages_link[i];
-  pages[`project${i}`].source = github_links[i];
+  pages[`project${i}`].live = pagesLink[i];
+  pages[`project${i}`].source = githubLinks[i];
 }
 
 function modals(e) {
