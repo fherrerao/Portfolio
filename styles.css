@@ -649,7 +649,7 @@ textarea {
   }
 
   .projects-container:first-child {
-    background-image: url("img/imgplaceholder1.png");
+    background-image: url("");
     background-size: cover;
     padding: 0;
     display: flex;
@@ -1040,6 +1040,10 @@ textarea {
     color: #fff;
     padding: 5px;
   }
+}
+
+.bg_hotel {
+  border: 2px solid #f55800;
 }
 
 .desktop-header.activated {
