@@ -162,6 +162,10 @@ body {
   margin: 0 0;
 }
 
+.bg_space {
+  width: 100%;
+}
+
 .vector {
   border: 1px solid #212121;
   margin: 0 24px;
@@ -235,11 +239,9 @@ body {
 }
 
 .projects-container {
-  background-color: #fff;
-  background-image: url(img/placeholderproject.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .projects-container h2 {
@@ -247,8 +249,7 @@ body {
   font-size: 32px;
   font-weight: 400;
   color: black;
-  padding-top: 84px;
-  margin: 0 24px;
+  margin: 24px;
 }
 
 .projects-container p {
@@ -634,7 +635,7 @@ textarea {
 
   .projects {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 37px 24px;
   }
 
@@ -648,14 +649,6 @@ textarea {
     margin: 16px 16px;
   }
 
-  .projects-container:first-child {
-    background-image: url("https://raw.githubusercontent.com/fherrerao/budget-app-capstone/develop/app/assets/images/budget.png");
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-  }
-
   .about h2 {
     font-size: 72px;
   }
@@ -663,65 +656,6 @@ textarea {
   .stories-section h2 {
     font-size: 40px;
   }
-
-  /* .projects-container:first-child h2,
-  .projects-container:first-child p,
-  .projects-container:first-child ul {
-    display: none;
-  } */
-
-  .projects-container:nth-child(2n) {
-    background-image: url("https://raw.githubusercontent.com/fherrerao/Recipe-App-Capstone/develop/screenshot.png");
-    background-size: contain;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    background-position: top;
-  }
-
-  .projects-container:nth-child(3n) {
-    background-image: url("https://user-images.githubusercontent.com/91301423/156890177-7743b14d-e596-4c77-b0a1-d81bdf141752.png");
-    background-size: contain;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    background-position: top;
-  }
-
-  .projects-container:nth-child(4n) {
-    background-image: url("https://user-images.githubusercontent.com/91301423/156767747-742c3464-b9c6-4109-89a8-e6725a791e11.png");
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    background-position: left;
-  }
-
-  .projects-container:nth-child(5n) {
-    background-image: url("https://user-images.githubusercontent.com/91301423/157890781-cde43192-ebad-47bc-b7de-4f781ea0298f.png");
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    background-position: top;
-  }
-
-  .projects-container:nth-child(6n) {
-    background-image: url("https://user-images.githubusercontent.com/91301423/155862896-0c6997f8-8fa2-4558-9604-6f1d8dd8296f.png");
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    background-position: left;
-  }
-
-  /* .projects-container:nth-child(2n) a,
-  .projects-container:nth-child(3n) a,
-  .projects-container:nth-child(4n) a,
-  .projects-container:nth-child(5n) a,
-  .projects-container:last-child a {
-    display: none;
-  } */
 
   .container {
     max-width: 85%;
@@ -740,10 +674,6 @@ textarea {
   .story {
     font-size: 20px;
   }
-
-  /* .multi {
-    margin: 0;
-  } */
 
   .about {
     background-image: none;
@@ -808,10 +738,6 @@ textarea {
     transition: all 0.5s ease-in-out;
   }
 
-  .text-1 {
-    display: none;
-  }
-
   .welcome {
     font-size: 72px;
   }
@@ -841,7 +767,6 @@ textarea {
   .img-modal {
     width: 100%;
     max-height: 300px;
-    border: 1px solid #f55800;
   }
 
   .main-container {
@@ -965,10 +890,6 @@ textarea {
     display: none;
   }
 
-  .text-2 {
-    display: none;
-  }
-
   .vector-menu {
     border: 0.5px solid #6f6c6b;
     margin: 0;
@@ -1045,10 +966,6 @@ textarea {
     color: #fff;
     padding: 5px;
   }
-}
-
-.bg_hotel {
-  border: 2px solid #f55800;
 }
 
 .desktop-header.activated {
