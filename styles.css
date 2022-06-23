@@ -175,7 +175,7 @@ body {
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  padding: 0 24px;  
+  padding: 0 24px;
 }
 
 .stories-section img {
@@ -248,8 +248,8 @@ body {
   font-family: "Crete Round", sans-serif;
   font-size: 32px;
   font-weight: 400;
-  color: black;  
-  margin: 24px; 
+  color: black;
+  margin: 24px;
 }
 
 .projects-container p {
@@ -284,7 +284,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   margin-top: 50px;
-  row-gap: 24px;  
+  row-gap: 24px;
 }
 
 .separadtion {
@@ -636,7 +636,7 @@ textarea {
   .projects {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 37px 24px;    
+    gap: 37px 24px;
   }
 
   .languages ul {
@@ -648,7 +648,7 @@ textarea {
   .projects-container p {
     margin: 16px 16px;
   }
-  
+
   .about h2 {
     font-size: 72px;
   }
@@ -657,7 +657,7 @@ textarea {
     font-size: 40px;
   }
 
-  
+
   .container {
     max-width: 85%;
     margin: 20px auto;
@@ -674,7 +674,7 @@ textarea {
 
   .story {
     font-size: 20px;
-  }  
+  }
 
   .about {
     background-image: none;
@@ -737,7 +737,7 @@ textarea {
     color: #f55800;
     border: 1px solid #f55800;
     transition: all 0.5s ease-in-out;
-  }  
+  }
 
   .welcome {
     font-size: 72px;
@@ -767,7 +767,7 @@ textarea {
 
   .img-modal {
     width: 100%;
-    max-height: 300px;  
+    max-height: 300px;
   }
 
   .main-container {
@@ -889,7 +889,7 @@ textarea {
 
   .about img {
     display: none;
-  }  
+  }
 
   .vector-menu {
     border: 0.5px solid #6f6c6b;
