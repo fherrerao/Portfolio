@@ -294,7 +294,6 @@ body {
 
 .about {
   background-color: #1c1a19;
-  background-image: url("img/frame.png");
   background-repeat: no-repeat;
   background-position: right 300px;
   margin-top: 120px;
@@ -306,7 +305,7 @@ body {
   color: #f55800;
   font-size: 62px;
   font-weight: 400;
-  text-align: left;
+  text-align: center;
   margin: 0 24px;
   padding-top: 120px;
 }
@@ -515,6 +514,20 @@ textarea {
   margin: 124px 0 24px 0;
 }
 
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 0;
+}
+
+.profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  margin-top: 24px;
+}
+
 @media (min-width: 992px) {
   .header {
     justify-content: space-between;
@@ -572,7 +585,8 @@ textarea {
   .about img {
     width: 50%;
     height: 50%;
-    margin-top: 100px;
+    text-align: center;
+    margin: 0;
   }
 
   .stories-section img {
@@ -684,7 +698,7 @@ textarea {
     column-gap: 40px;
   }
 
-  .about div {
+  .about-div {
     margin-left: 10%;
     text-align: justify;
     font-size: 20px;
@@ -886,7 +900,7 @@ textarea {
     display: none;
   }
 
-  .about img {
+  .about-img {
     display: none;
   }
 
