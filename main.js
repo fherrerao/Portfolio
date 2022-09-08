@@ -80,7 +80,7 @@ const images = [
 
 const pagesLink = [
   'https://reservify.netlify.app/',
-  'https://budget-app-cap.herokuapp.com/',
+  'https://budget-app.fly.dev/',
   'https://infinite-stream-75498.herokuapp.com/',
   'https://fherrerao.github.io/Capstone-Group-Project/dist/',
   'https://ixboy.github.io/Space-Travelers-Hub/',
